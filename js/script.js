@@ -1,5 +1,5 @@
 jQuery("#carousel").owlCarousel({
-  autoplay: false,
+  autoplay: true,
   rewind: false,
   loop:true,
   margin: 20,
@@ -30,7 +30,7 @@ jQuery("#carousel").owlCarousel({
   }
 });
 jQuery("#carousel2").owlCarousel({
-  autoplay: false,
+  autoplay: true,
   rewind: false,
   loop:true,
   margin: 20,
