@@ -530,7 +530,21 @@ border-radius: 50px;*/
   text-align: justify;
   color: #000000;
 }
-/********************* PC ******************************************************************/
+.biography-section {
+  background: #e7e7e7;
+}
+.bio-title {
+  font-family: "Poppins";
+  font-style: normal;
+  color: #000000;
+}
+.bio-para {
+  font-family: "Poppins";
+  font-style: normal;
+  color: #000000;
+  text-align: justify;
+}
+/********************* PC ********************************************************************************/
 
 @media screen and (min-width: 769px) {
   .navbar {
@@ -849,9 +863,22 @@ border-radius: 50px;*/
     font-size: 18px;
     line-height: 36px;
   }
+  .biography-container {
+    padding: 30px 140px;
+  }
+  .bio-title {
+    font-weight: 700;
+    font-size: 40px;
+    line-height: 60px;
+  }
+  .bio-para {
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 36px;
+  }
 }
 
-/********************* Mobile ************************/
+/********************* Mobile *************************************************************************/
 @media screen and (max-width: 767px) {
   .nav-bar-buttons {
     margin-right: 15px;
