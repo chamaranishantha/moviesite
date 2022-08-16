@@ -567,6 +567,69 @@ border-radius: 50px;*/
 .profile-dislike-btn {
   color: white;
 }
+.show-title-box-title {
+  background: linear-gradient(
+    90.64deg,
+    #199bd7 0%,
+    rgba(109, 190, 127, 0.7) 100%
+  );
+  border-radius: 15px 15px 0px 0px;
+}
+.show-title {
+  font-family: "Poppins";
+  font-style: normal;
+  color: #ffffff;
+}
+.edit-show {
+  font-family: "Poppins";
+  font-style: normal;
+  color: #ffffff;
+}
+.edit-show:hover {
+  text-decoration: none;
+  color: #fff;
+}
+.show-title-box {
+  display: table;
+}
+/* .edit-show-wrapper {
+  text-align: end;
+  display: table-cell;
+  vertical-align: middle;
+} */
+.vl-show {
+  border: 2px solid #fff;
+  transform: rotate(180deg);
+  height: 50%;
+}
+.show-title-box {
+  border: 1px solid #8accc0;
+  border-radius: 15px;
+  padding-bottom: 30px;
+}
+.show-subtitle {
+  font-family: "Poppins";
+  font-style: normal;
+  color: #000000;
+}
+.show-date {
+  font-family: "Poppins";
+  font-style: normal;
+  color: #000000;
+}
+.show-views {
+  font-family: "Poppins";
+  font-style: normal;
+  color: #000000;
+}
+.video-grid-section {
+  background-color: #e7e7e7;
+}
+.comments {
+  font-family: "Poppins";
+  font-style: normal;
+  color: #000000;
+}
 /********************* PC ********************************************************************************/
 
 @media screen and (min-width: 769px) {
@@ -924,6 +987,56 @@ border-radius: 50px;*/
   .photo-grid-box {
     justify-content: center;
   }
+  .photo-title-box {
+    margin-bottom: 30px;
+  }
+  .video-frame {
+    width: 100%;
+    height: 50vh;
+  }
+  .show-title {
+    font-weight: 700;
+    font-size: 40px;
+    line-height: 60px;
+  }
+  .edit-show {
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 30px;
+  }
+  .show-subtitle {
+    font-weight: 600;
+    font-size: 24px;
+    line-height: 36px;
+  }
+  .show-date-box,
+  .show-views-box {
+    padding-left: 15%;
+    padding-top: 1%;
+  }
+  .show-date {
+    font-weight: 600;
+    font-size: 20px;
+    line-height: 30px;
+    letter-spacing: 0.07em;
+  }
+  .show-views {
+    font-weight: 600;
+    font-size: 20px;
+    line-height: 30px;
+    letter-spacing: 0.07em;
+  }
+  .show-title-box {
+    max-width: 49% !important;
+  }
+  .show-main-row {
+    margin-top: 30px;
+  }
+  .comments {
+    font-weight: 700;
+    font-size: 40px;
+    line-height: 60px;
+  }
 }
 
 /********************* Mobile *************************************************************************/
@@ -1088,6 +1201,28 @@ border-radius: 50px;*/
   }
   .photo-middle {
     width: 39% !important;
+  }
+  .show-title-box-right {
+    margin-left: auto !important;
+  }
+  .show-title-box-title {
+    padding: 10px;
+  }
+  .show-subtitle {
+    font-weight: 600;
+    font-size: 18px;
+    line-height: 30px;
+  }
+  .show-date,
+  .show-views {
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 26px;
+    letter-spacing: 0.07em;
+  }
+  .show-date-box,
+  .show-views-box {
+    padding-top: 2%;
   }
 }
 
