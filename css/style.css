@@ -630,6 +630,18 @@ border-radius: 50px;*/
   font-style: normal;
   color: #000000;
 }
+.details-comment:hover {
+  text-decoration: none;
+  color: white;
+}
+.details-comment {
+  filter: drop-shadow(0px 0px 10px rgba(0, 0, 0, 0.25));
+  background: #52b3cb;
+  border-radius: 18.1694px;
+  font-family: "Poppins";
+  font-style: normal;
+  color: #ffffff;
+}
 /********************* PC ********************************************************************************/
 
 @media screen and (min-width: 769px) {
@@ -1036,6 +1048,15 @@ border-radius: 50px;*/
     font-weight: 700;
     font-size: 40px;
     line-height: 60px;
+  }
+  .details-comment {
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 30px;
+    padding: 15px 60px;
+  }
+  .details-comment-box {
+    margin-top: 100px;
   }
 }
 
