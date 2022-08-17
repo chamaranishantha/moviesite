@@ -642,6 +642,96 @@ border-radius: 50px;*/
   font-style: normal;
   color: #ffffff;
 }
+
+/* Youtube Player  ************************/
+
+.hytPlayerWrap {
+  display: inline-block;
+  position: relative;
+}
+.hytPlayerWrap.ended::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  cursor: pointer;
+  background-color: black;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: 64px 64px;
+  background-image: url(data:image/svg+xml;utf8;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIxMjgiIGhlaWdodD0iMTI4IiB2aWV3Qm94PSIwIDAgNTEwIDUxMCI+PHBhdGggZD0iTTI1NSAxMDJWMEwxMjcuNSAxMjcuNSAyNTUgMjU1VjE1M2M4NC4xNSAwIDE1MyA2OC44NSAxNTMgMTUzcy02OC44NSAxNTMtMTUzIDE1My0xNTMtNjguODUtMTUzLTE1M0g1MWMwIDExMi4yIDkxLjggMjA0IDIwNCAyMDRzMjA0LTkxLjggMjA0LTIwNC05MS44LTIwNC0yMDQtMjA0eiIgZmlsbD0iI0ZGRiIvPjwvc3ZnPg==);
+}
+.hytPlayerWrap.paused::after {
+  content: "";
+  position: absolute;
+  top: 70px;
+  left: 0;
+  bottom: 50px;
+  right: 0;
+  cursor: pointer;
+  background-color: black;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: 40px 40px;
+  background-image: url(data:image/svg+xml;utf8;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZlcnNpb249IjEiIHdpZHRoPSIxNzA2LjY2NyIgaGVpZ2h0PSIxNzA2LjY2NyIgdmlld0JveD0iMCAwIDEyODAgMTI4MCI+PHBhdGggZD0iTTE1Ny42MzUgMi45ODRMMTI2MC45NzkgNjQwIDE1Ny42MzUgMTI3Ny4wMTZ6IiBmaWxsPSIjZmZmIi8+PC9zdmc+);
+}
+
+.wrapper {
+  position: relative;
+  margin: 0 auto;
+  overflow: hidden;
+  padding: 5px;
+  height: 50px;
+}
+
+.list {
+  position: absolute;
+  left: 0px;
+  top: 0px;
+  min-width: 3500px;
+  margin-top: 0px;
+}
+
+.list li {
+  display: table-cell;
+  position: relative;
+  text-align: center;
+  cursor: grab;
+  cursor: -webkit-grab;
+  color: #efefef;
+  vertical-align: middle;
+}
+
+.scroller {
+  text-align: center;
+  cursor: pointer;
+  display: none;
+  padding: 7px;
+  padding-top: 13px;
+  white-space: no-wrap;
+  vertical-align: middle;
+  background-color: transparent;
+}
+#myTab .active {
+  background: #3fc173 !important;
+  border: 0.476974px solid #7a7b7b !important;
+  color: white !important;
+}
+#myTab .nav-link {
+  font-family: "Poppins";
+  font-style: normal;
+  color: #000000;
+  background: #e4e8ec;
+  border: 0.476974px solid #7a7b7b;
+  border-radius: 19.0789px;
+  margin-right: 5px;
+}
+.nav-hr {
+  border: 1.90789px solid #7a7b7b;
+  background-color: #7a7b7b;
+}
 /********************* PC ********************************************************************************/
 
 @media screen and (min-width: 769px) {
@@ -1058,6 +1148,15 @@ border-radius: 50px;*/
   .details-comment-box {
     margin-top: 100px;
   }
+  #myTab .nav-link {
+    font-weight: 400;
+    font-size: 15.2632px;
+    line-height: 23px;
+  }
+  .yt-icon,
+  .mail-icon {
+    height: 40px !important;
+  }
 }
 
 /********************* Mobile *************************************************************************/
@@ -1184,6 +1283,8 @@ border-radius: 50px;*/
   .details-title,
   .bio-title {
     font-size: 25px;
+    padding-top: 10px;
+    padding-bottom: 5px;
   }
   .biography-section {
     margin-top: 35px;
@@ -1244,6 +1345,33 @@ border-radius: 50px;*/
   .show-date-box,
   .show-views-box {
     padding-top: 2%;
+  }
+  .comments-row {
+    margin-top: 35px;
+  }
+  .comments {
+    font-size: 20px;
+  }
+  .details-comment {
+    padding: 15px 25px;
+  }
+  .details-comment-box {
+    margin-top: 35px;
+    margin-bottom: 35px;
+  }
+  .video-player-frame {
+    width: 100%;
+    height: auto;
+  }
+  .yt-icon,
+  .mail-icon {
+    height: 40px !important;
+  }
+  .show-title {
+    font-size: 20px;
+  }
+  .show-title-box-right {
+    margin-top: 35px;
   }
 }
 
