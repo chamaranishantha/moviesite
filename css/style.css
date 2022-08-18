@@ -424,6 +424,7 @@ border-radius: 50px;*/
 }
 .footer-hr {
   border: 1px solid #ffffff;
+  background-color: white;
 }
 .footer-text {
   font-family: "Poppins";
@@ -1290,8 +1291,7 @@ body {
     text-align: justify;
   }
   .explo-card-title {
-    margin-top: 2vh;
-    display: none;
+    margin-top: 0.5vh;
   }
   .custom-toggler {
     outline: none !important;
