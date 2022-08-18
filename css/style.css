@@ -1447,6 +1447,38 @@ body {
   .show-title-box-right {
     margin-top: 35px;
   }
+  .hero-section {
+    height: 100vh;
+  }
+  .profile-detail-section,
+  .show-section {
+    margin-top: 35px !important;
+  }
+  .pro-action-btns {
+    padding: 15px 20px;
+    width: 70%;
+  }
+  .pro-action-btn-box {
+    text-align: -webkit-center;
+  }
+  .hero-profile-image {
+    max-width: 90%;
+    width: 40%;
+  }
+  .hytPlayerWrap-main,
+  .hytPlayerWrap-small {
+    width: 100%;
+  }
+  .video-grid-section {
+    padding-bottom: 35px;
+    padding-top: 35px;
+  }
+  .player-small-content-box {
+    margin-bottom: 25px;
+  }
+  .video-player-frame {
+    height: 200px;
+  }
 }
 
 /********************* Tab ******************************************************/
@@ -1522,6 +1554,255 @@ body {
   }
   .explo-card-container {
     margin-bottom: 15vh;
+  }
+  .nav-link-row-tab {
+    margin-top: 25px;
+  }
+  .profile-title {
+    font-size: 15px;
+  }
+  .profile-cat {
+    font-size: 13px;
+  }
+  .profile-like-btn,
+  .profile-dislike-btn {
+    font-size: 12px;
+    background: transparent;
+    border-radius: 10px;
+    color: white;
+    padding: 10px 15px;
+    border: 1px solid white;
+  }
+  .profile-like-btn img {
+    width: 15px;
+  }
+  .profile-dislike-btn img {
+    width: 15px;
+  }
+  .like-counter,
+  .dislike-counter {
+    font-size: 10px;
+  }
+  .pro-action-btns {
+    padding: 10px 25px;
+    font-size: 14px;
+    width: 70%;
+  }
+  .pro-action-btns img {
+    width: 15px;
+    margin-right: 10px;
+  }
+  .check-s-media {
+    font-size: 13px;
+  }
+  .pro-action-btn-box {
+    text-align: -webkit-center;
+  }
+  .social-icon-box img {
+    width: 20px;
+  }
+  .hero-section {
+    padding-bottom: 1px;
+  }
+  .details-title,
+  .bio-title,
+  .show-title {
+    font-size: 20px;
+    padding-top: 10px;
+  }
+  .biography-section,
+  .profile-detail-section {
+    margin-top: 30px;
+    margin-bottom: 30px;
+  }
+  .show-phone-no {
+    padding: 12px 12px;
+    font-size: 15px;
+  }
+  .whatsapp-call {
+    padding: 12px 15px;
+    font-size: 15px;
+  }
+  .show-phone-no-box {
+    margin-top: 30px;
+  }
+  .details-row {
+    padding-top: 25px;
+    padding-bottom: 25px;
+  }
+  .personal-bio-box {
+    margin-bottom: 10px;
+  }
+  .biography-section,
+  .photo-grid-section {
+    padding-top: 25px;
+    padding-bottom: 25px;
+    margin-bottom: 30px;
+  }
+  .photo-grid-box {
+    margin-top: 15px;
+  }
+  .yt-icon,
+  .mail-icon {
+    height: 20px !important;
+  }
+  .hytPlayerWrapOuter-scrollable {
+    height: 168px;
+    overflow-y: auto;
+  }
+  .hytPlayerWrap-main,
+  .video-player-frame-main {
+    width: -webkit-fill-available !important;
+    height: 40vh;
+  }
+  .hytPlayerWrap-small {
+    margin-bottom: 28px;
+  }
+  .video-player-frame-small {
+    height: 100px;
+  }
+  .small-player-subtitle {
+    display: none;
+  }
+  .small-player-title {
+    font-weight: 600;
+    font-size: 12px;
+  }
+  .small-palyer-views {
+    font-size: 12px;
+  }
+  .video-grid-section {
+    padding-top: 25px;
+    padding-bottom: 25px;
+    margin-bottom: 30px;
+  }
+  .photo-title-box {
+    margin-bottom: 15px;
+  }
+  .show-title-box-title {
+    padding: 5px 10px;
+  }
+  .show-title-box {
+    max-width: 49%;
+  }
+  .show-views img {
+    width: 15px;
+  }
+  .show-date,
+  .show-views {
+    font-size: 13px;
+  }
+  .show-date-box,
+  .show-views-box {
+    padding-left: 10%;
+  }
+  .comments-row {
+    margin-top: 35px;
+  }
+  .comments {
+    font-size: 20px;
+  }
+  .details-comment {
+    padding: 10px 20px;
+  }
+  .show-section {
+    margin-bottom: 50px;
+  }
+}
+
+/************************************Tab Big Screen ************************************************************************/
+
+@media screen and (min-width: 1024px) and (max-width: 1024px) {
+  .hero-profile-section,
+  .profile-detail-section,
+  .biography-container,
+  .footer-section {
+    padding: 3px 5px 15px 5px;
+    margin-bottom: 35px;
+  }
+  .navbar {
+    padding-left: 5px;
+    padding-right: 5px;
+  }
+  .profile-nav-links {
+    font-size: 20px;
+  }
+  .profile-like-btn,
+  .profile-dislike-btn {
+    padding: 15px 10px;
+    font-size: 12px;
+  }
+  .profile-title {
+    font-size: 15px;
+    line-height: 18px;
+  }
+  .profile-cat {
+    font-size: 13px;
+    margin-top: 25px;
+    margin-bottom: 25px;
+    line-height: 10px;
+  }
+  .pro-action-btns {
+    font-size: 15px;
+    padding: 10px 15px;
+  }
+  .pro-action-btns img {
+    width: 35px;
+  }
+  .check-s-media {
+    font-size: 15px;
+  }
+  .yt-icon,
+  .mail-icon {
+    height: 35px !important;
+  }
+  .details-title,
+  .bio-title,
+  .show-title,
+  .comments {
+    font-size: 20px;
+  }
+  .personal-bio-box strong {
+    font-size: 13px;
+  }
+  .personal-bio-box span {
+    font-size: 12px;
+  }
+  .show-phone-no,
+  .whatsapp-call {
+    font-size: 15px;
+  }
+  .vl {
+    border: 3px solid #7a7b7b;
+    background-color: #7a7b7b;
+  }
+  .details-para,
+  .bio-para,
+  .show-subtitle,
+  .details-comment {
+    font-size: 16px;
+  }
+  .hytPlayerWrapOuter-scrollable {
+    height: 295px;
+  }
+  .show-date,
+  .show-views {
+    font-size: 14px;
+  }
+  .show-views img {
+    width: 15px;
+  }
+  .edit-show img {
+    width: 22px;
+  }
+  .edit-show {
+    font-size: 15px;
+  }
+  .details-comment {
+    padding: 15px 35px;
+  }
+  .footer-links li a {
+    font-size: 15px;
   }
 }
 
