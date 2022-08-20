@@ -20,7 +20,8 @@ border-radius: 50px;*/
   -webkit-backdrop-filter: blur(6.1px);
   border: 1px solid rgba(255, 255, 255, 0.21);
 }
-.hero-section {
+
+.nav-section {
   background: linear-gradient(242deg, #199bd7, #6dbe7f);
   background-size: 400% 400%;
   -webkit-animation: AnimationName 11s ease infinite;
@@ -775,6 +776,62 @@ border-radius: 50px;*/
 body {
   scroll-behavior: smooth !important;
 }
+.mouse_scroll:hover {
+  cursor: pointer;
+}
+.form-title {
+  font-family: "Poppins";
+  font-style: normal;
+  color: #000000;
+}
+.update-details-form {
+  font-family: "Poppins";
+  font-style: normal;
+  color: #000000;
+}
+.form-tv-show {
+  font-family: "Poppins";
+  font-style: normal;
+  color: #000000;
+}
+.add-more {
+  background: #c7c4c4;
+  border-radius: 10px;
+  font-family: "Poppins";
+  font-style: normal;
+  color: #000000;
+}
+.add-more img {
+  margin-right: 10px;
+}
+.add-more:hover {
+  text-decoration: none;
+  color: #000000;
+}
+.update-details-submit {
+  background: #6dbe7f;
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.25);
+  border-radius: 18.1694px;
+  font-family: "Poppins";
+  font-style: normal;
+  color: #ffffff;
+}
+.report-issue {
+  filter: drop-shadow(0px 0px 10px rgba(0, 0, 0, 0.25));
+  background: #cb8c52;
+  border-radius: 18.1694px;
+  font-family: "Poppins";
+  font-style: normal;
+  color: #ffffff;
+}
+.report-issue:hover {
+  text-decoration: none;
+  color: #fff;
+}
+.update-details-submit:hover {
+  text-decoration: none;
+  color: #fff;
+}
 /********************* PC ********************************************************************************/
 
 @media screen and (min-width: 769px) {
@@ -1232,12 +1289,56 @@ body {
     font-size: 12.4px;
     line-height: 19px;
   }
+  .form-section {
+    padding: 50px 125px 100px 125px;
+    background-color: #e7e7e7;
+  }
+  .form-title {
+    font-weight: 700;
+    font-size: 40px;
+    line-height: 60px;
+  }
+  .update-details-form label {
+    font-weight: 400;
+    font-size: 24px;
+    line-height: 36px;
+  }
+  .form-tv-show {
+    font-weight: 600;
+    font-size: 24px;
+    line-height: 36px;
+    margin-top: 35px;
+  }
+
+  .add-more {
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 18px;
+    padding: 10px 15px;
+  }
+  .update-details-submit {
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 30px;
+    padding: 15px 60px;
+    margin-right: 30px;
+  }
+  .report-issue {
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 30px;
+    padding: 15px 60px;
+  }
+  .update-submit-row {
+    margin-top: 75px;
+  }
 }
 
 /********************* Mobile *************************************************************************/
 @media screen and (max-width: 767px) {
   .nav-bar-buttons {
-    margin-right: 15px;
+    /* margin-right: 15px; */
+    width: 100%;
   }
   .hero-banner {
     display: none;
@@ -1489,6 +1590,13 @@ body {
   .nav-btn-icons {
     margin-right: 5px;
   }
+  .nav-bar-buttons {
+    /* margin-right: 15px; */
+    width: 100%;
+  }
+  .search {
+    width: 100% !important;
+  }
   .custom-toggler.navbar-toggler {
     border-color: rgb(2555, 255, 255);
   }
@@ -1713,6 +1821,31 @@ body {
 /************************************Tab Big Screen ************************************************************************/
 
 @media screen and (min-width: 1024px) and (max-width: 1024px) {
+  .hero-banner-section {
+    padding: 35px 10px;
+  }
+  .explo-section {
+    padding-left: 10px;
+    padding-right: 10px;
+  }
+  .explo-card-container {
+    margin-top: 10px;
+  }
+  .hero-banner-row {
+    -webkit-box-align: normal !important;
+    -ms-flex-align: normal !important;
+    align-items: normal !important;
+  }
+  .explo-img {
+    width: auto;
+    height: 120px;
+  }
+  .explo-card-title {
+    font-size: 28px;
+  }
+  .owl-item .item p {
+    font-size: 25px;
+  }
   .hero-profile-section,
   .profile-detail-section,
   .biography-container,
@@ -1803,6 +1936,10 @@ body {
   }
   .footer-links li a {
     font-size: 15px;
+  }
+  .hytPlayerWrap-main,
+  .video-player-frame-main {
+    height: 32vh;
   }
 }
 

@@ -24,7 +24,7 @@ jQuery("#carousel").owlCarousel({
     },
 
     1024: {
-      items: 3,
+      items: 2,
     },
 
     1366: {
@@ -58,7 +58,7 @@ jQuery("#carousel2").owlCarousel({
     },
 
     1024: {
-      items: 3,
+      items: 2,
     },
 
     1366: {
