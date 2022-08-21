@@ -1580,6 +1580,34 @@ body {
   .video-player-frame {
     height: 200px;
   }
+  .form-section {
+    padding-top: 50px;
+    padding-bottom: 50px;
+  }
+  .form-title {
+    font-size: 25px;
+  }
+  .form-tv-show {
+    font-size: 25px;
+    margin-top: 25px;
+  }
+  .update-details-form .col-12 {
+    margin-top: 15px;
+  }
+  .add-more,
+  .update-details-submit,
+  .report-issue {
+    padding: 10px 10px;
+  }
+  .add-more-box {
+    margin-top: 30px !important;
+  }
+  .update-submit-row {
+    margin-top: 35px;
+  }
+  .update-meadia-title {
+    margin-top: 35px;
+  }
 }
 
 /********************* Tab ******************************************************/
