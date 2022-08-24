@@ -10,12 +10,14 @@
 		<link rel="preconnect" href="https://fonts.googleapis.com">
 		<link rel="preconnect" href="https://fonts.googleapis.com">
 		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-		<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300&display=swap" rel="stylesheet">
 		<link rel="stylesheet" type="text/css" href="css/owl.carousel.min.css">
-		<link rel="stylesheet" type="text/css" href="css/font-awesome.min.css">
+        <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300&display=swap" rel="stylesheet">
+		<link rel="stylesheet" type="text/css" href="css/font-awesome.min.css"> 
 		<link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css"/>
+        <link rel="stylesheet" href="css/image-uploader.css">
 		<script src="https://kit.fontawesome.com/c8e4d183c2.js" crossorigin="anonymous"></script>
         <link href="https://unpkg.com/gijgo@1.9.13/css/gijgo.min.css" rel="stylesheet" type="text/css" />
+        <link type="text/css" rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
 	</head>
 	<body>
         <section class="nav-section">
@@ -113,6 +115,35 @@
                         </div>
                     </div>
                     <div class="row mt-5">
+                        <div class="col-lg-12 col-md-12 col-12 ">
+                            <h2 class="form-tv-show text-left">Add photos to album</h2>
+                            <span class="upload-cover-photo">Upload cover photo (300x300px size)</span>
+                            <div class="input-field cover-img-box">
+                                <label class="active"></label>
+                                <div class="input-images-2" style="padding-top: .5rem;"></div>
+                            </div>
+                            <!-- <input type="file" id="cover_img_up_btn" />
+                            <div class="mt-5">
+                                <label for="cover_img_up_btn" class="cover-img-up-cus-btn">
+                                    <TextBlock class="label-underline" TextDecorations="Underline">Upload</TextBlock>
+                                </label>
+                            </div> -->
+                            <!-- <div class="text-center cover_img_prev_box">
+                                <img id="cover_img_prev" src="img/def-img-big.png" alt="your image" />
+                            </div> -->
+                        </div>  
+          
+                        <div class="col-lg-12 col-md-12 col-12">
+                            <span class="upload-cover-photo">Add photos to album</span> 
+                            <div class="mt-5">
+                            </div>                           
+                            <div class="input-field">
+                                <label class="active"></label>
+                                <div class="input-images-1" style="padding-top: .5rem;"></div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row mt-5">
                         <div class="col-lg-12 col-md-12 col-12">
                             <label for="">Biography:</label>
                             <textarea class="form-control" id="" rows="5"></textarea>
@@ -189,7 +220,7 @@
                             <a href="#" class="report-issue"> <img class="mr-2" src="img/warnin-submit-icon.png" alt=""> Report Issue</a>
                         </div>
                     </div>
-                </form>    
+                </form>  
             </div>
 
         </section>
@@ -230,6 +261,8 @@
 			<script src="js/script.js"></script>
 			<script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
             <script src="https://unpkg.com/gijgo@1.9.13/js/gijgo.min.js" type="text/javascript"></script>
+            <script src="js/image-uploader.js"></script>
+            <script src="js/image-uploader2.js"></script>
             <script>
                 $('#datepicker').datepicker({
                 uiLibrary: 'bootstrap4'
@@ -288,6 +321,46 @@
                 e.preventDefault(); $(this).parent('div').parent('div').remove(); y--;
                 })
                 });
+            </script>
+            <script>
+                cover_img_up_btn.onchange = evt => {
+                const [file] = cover_img_up_btn.files
+                if (file) {
+                    cover_img_prev.src = URL.createObjectURL(file)
+                }
+                }
+            </script>
+            <!-- <script>
+                $(function() {
+                // Multiple images preview in browser
+                var imagesPreview = function(input, placeToInsertImagePreview) {
+
+                    if (input.files) {
+                        var filesAmount = input.files.length;
+
+                        for (i = 0; i < filesAmount; i++) {
+                            var reader = new FileReader();
+
+                            reader.onload = function(event) {
+                                $($.parseHTML('<img>')).attr('src', event.target.result).appendTo(placeToInsertImagePreview);
+                            }
+
+                            reader.readAsDataURL(input.files[i]);
+                        }
+                    }
+
+                };
+
+                $('#gallery-photo-add').on('change', function() {
+                    imagesPreview(this, 'div.gallery');
+                });
+            });
+            </script> -->
+            <script>
+                $('.input-images-1').imageUploader();
+            </script>
+            <script>
+                $('.input-images-2').imageUploader2();
             </script>
 		</body>
 	</html>
