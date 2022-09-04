@@ -124,7 +124,7 @@ border-radius: 50px;*/
 .explo-card {
   /* background: linear-gradient(242deg, #199bd7, #6dbe7f); */
   background: white;
-  box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.25);
+  box-shadow: 0px 0px 8px rgba(0, 0, 0, 0.25);
   border-radius: 20px;
 }
 .explo-card-container {
@@ -237,7 +237,7 @@ border-radius: 50px;*/
   display: flex;
   justify-content: center;
   align-items: center;
-  background-color: #181818;
+  background-color: #333333;
   margin-top: 10vh;
   margin-bottom: 10vh;
 }
@@ -297,7 +297,7 @@ border-radius: 50px;*/
   margin: 0px 2px;
 }
 .slider-details p {
-  color: #8f8f8f;
+  color: #fff;
   font-size: 0.9rem;
   margin: 20px 0px 10px 0px;
 }
@@ -433,8 +433,8 @@ border-radius: 50px;*/
   color: #ffffff;
 }
 .explo-card:hover {
-  box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.9);
-  transform: scale(1.1);
+  box-shadow: 0px 0px 8px rgba(0, 0, 0, 0.9);
+  transform: scale(1.05);
   cursor: pointer;
   -webkit-transition: 0.3s ease-out;
   -moz-transition: 0.3s ease-out;
@@ -732,8 +732,8 @@ border-radius: 50px;*/
   margin-right: 5px;
 }
 .nav-hr {
-  border: 1.90789px solid #7a7b7b;
-  background-color: #7a7b7b;
+  border: 1.90789px solid #cacaca;
+  background-color: #cacaca;
 }
 .small-player-title {
   font-family: "Poppins";
@@ -875,6 +875,38 @@ body {
 .cover-img-up-cus-btn:hover {
   cursor: pointer;
 }
+.show-subtitle a {
+  color: #000000;
+  text-decoration: none;
+}
+.show-subtitle a:hover {
+  color: #000000;
+  text-decoration: none;
+}
+.profile-nav-links-box a:hover {
+  color: white;
+}
+
+/* .tes:hover {
+  color: #000;
+}
+
+.tes::before {
+  content: "";
+  position: absolute;
+  display: block;
+  width: 100%;
+  height: 2px;
+  bottom: 0;
+  left: 0;
+  background-color: #000;
+  transform: scaleX(0);
+  transition: transform 0.3s ease;
+}
+
+.tes:hover::before {
+  transform: scaleX(1);
+} */
 
 /********************* PC ********************************************************************************/
 
@@ -1028,7 +1060,7 @@ body {
   }
 
   .item {
-    padding: 5px 100px;
+    padding: 5px 90px;
   }
   .owl-slider {
     margin-top: 50px;
@@ -1174,8 +1206,9 @@ body {
     padding-right: 10px;
   }
   .vl {
-    border: 4px solid #7a7b7b;
+    border: 2px solid #7a7b7b;
     transform: rotate(180deg);
+    background: #7a7b7b;
   }
   .details-row span {
     font-weight: 400;
@@ -1406,9 +1439,21 @@ body {
     margin-top: 10vh;
     margin-bottom: 5vh;
   }
+  .owl-carousel .item img {
+    padding-top: 10px;
+    padding-bottom: 10px;
+  }
+  .details-comment {
+    margin-right: 15px;
+  }
 }
 
 /********************* Mobile *************************************************************************/
+@media screen and (max-width: 400px) {
+  .navbar-brand {
+    width: 70% !important;
+  }
+}
 @media screen and (max-width: 767px) {
   .nav-bar-buttons {
     /* margin-right: 15px; */
@@ -1441,6 +1486,7 @@ body {
   .explo-card-container {
     padding-top: 5vh;
     padding-bottom: 5vh;
+    box-shadow: none;
   }
   .explo-card {
     padding: 20px;
@@ -1606,7 +1652,12 @@ body {
     font-size: 20px;
   }
   .details-comment {
-    padding: 15px 25px;
+    padding: 10px 10px;
+    margin-right: 5px;
+  }
+  .details-comment img {
+    width: 22px;
+    margin-right: 5px;
   }
   .details-comment-box {
     margin-top: 35px;
@@ -1710,6 +1761,24 @@ body {
   .upload-text span {
     font-size: 14px;
     text-align: center;
+  }
+  .hero-banner-row {
+    padding-top: 25%;
+  }
+  .footer-logo {
+    width: 35%;
+  }
+  .footer-nav {
+    margin-top: 25px;
+    margin-bottom: 5px;
+  }
+  .profile-detail-section,
+  .biography-section,
+  .photo-grid-section,
+  .video-grid-section,
+  .show-section {
+    padding-left: 2px;
+    padding-right: 2px;
   }
 }
 
@@ -1977,6 +2046,17 @@ body {
   }
   .update-submit-row a {
     padding: 10px 20px;
+  }
+  .report-issue {
+    padding: 10px 20px;
+    margin-left: 10px;
+  }
+  .details-comment-box {
+    margin-top: 30px;
+  }
+  .details-comment img {
+    margin-right: 5px;
+    width: 25px;
   }
 }
 
@@ -2330,3 +2410,231 @@ body {
     opacity: 1;
   }
 }
+
+/*------------------------Gallery popup------------------------*/
+.gallery-popup-modal {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 300;
+  background: rgba(0, 0, 0, 0.9);
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+  -ms-flex-align: center;
+  align-items: center;
+  visibility: hidden;
+  opacity: 0;
+  -webkit-transition: 0.2s ease-out;
+  transition: 0.2s ease-out;
+}
+.gallery-popup-modal.active {
+  visibility: visible;
+  opacity: 1;
+  -webkit-transition: 0.4s ease-in;
+  transition: 0.4s ease-in;
+}
+.gallery-popup-modal .gallery-popup-container {
+  max-width: 100%;
+  margin: 0 auto;
+  overflow: hidden;
+  top: -40px;
+  opacity: 0;
+  -webkit-transition: 0.2s ease-out;
+  transition: 0.2s ease-out;
+}
+.gallery-popup-modal .gallery-popup-container.active {
+  top: 0;
+  opacity: 1;
+  -webkit-transition: 0.2s 0.6s ease-in;
+  transition: 0.2s 0.6s ease-in;
+}
+.gallery-popup-modal .gallery-popup-container #close-gallery {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  z-index: 100;
+}
+@media (min-width: 992px) {
+  .gallery-popup-modal .gallery-popup-container #close-gallery {
+    position: relative;
+    float: right;
+    right: 0;
+  }
+}
+.gallery-popup-modal .gallery-popup-container #close-gallery:before,
+.gallery-popup-modal .gallery-popup-container #close-gallery:after {
+  content: "";
+  position: absolute;
+  height: 80%;
+  width: 6px;
+  border-radius: 15px;
+  background: white;
+  transition: 0.4s ease;
+}
+.gallery-popup-modal .gallery-popup-container #close-gallery:before {
+  transform: rotate(45deg);
+}
+.gallery-popup-modal .gallery-popup-container #close-gallery:after {
+  transform: rotate(-45deg);
+}
+@media (min-width: 480px) {
+  .gallery-popup-modal .gallery-popup-container {
+    width: 80%;
+  }
+}
+@media (min-width: 992px) {
+  .gallery-popup-modal .gallery-popup-container {
+    position: relative;
+  }
+}
+.gallery-popup-modal .gallery-popup-container #prev-img:before,
+.gallery-popup-modal .gallery-popup-container #prev-img:after {
+  position: absolute;
+  content: "";
+  height: 50%;
+  width: 6px;
+  border-radius: 15px;
+  background: white;
+}
+.gallery-popup-modal .gallery-popup-container #prev-img:before {
+  transform: rotate(45deg);
+  transform-origin: 10px 4px;
+}
+.gallery-popup-modal .gallery-popup-container #prev-img:after {
+  transform: rotate(-45deg);
+  transform-origin: 10px 20px;
+}
+.gallery-popup-modal .gallery-popup-container #next-img:before,
+.gallery-popup-modal .gallery-popup-container #next-img:after {
+  position: absolute;
+  content: "";
+  height: 50%;
+  width: 6px;
+  border-radius: 15px;
+  background: white;
+}
+.gallery-popup-modal .gallery-popup-container #next-img:before {
+  transform: rotate(45deg);
+  transform-origin: -3px 19px;
+}
+.gallery-popup-modal .gallery-popup-container #next-img:after {
+  transform: rotate(-45deg);
+  transform-origin: -5px 4px;
+}
+.gallery-popup-modal .gallery-popup-container #prev-img,
+.gallery-popup-modal .gallery-popup-container #next-img,
+.gallery-popup-modal .gallery-popup-container #close-gallery {
+  text-decoration: none !important;
+  font-size: 30px;
+  color: white;
+  width: 50px;
+  height: 50px;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+  -ms-flex-align: center;
+  align-items: center;
+  border: 2px solid transparent;
+  -webkit-transition: 0.2s ease-in;
+  transition: 0.2s ease-in;
+}
+.gallery-popup-modal .gallery-popup-container #prev-img:hover,
+.gallery-popup-modal .gallery-popup-container #next-img:hover,
+.gallery-popup-modal .gallery-popup-container #close-gallery:hover {
+  color: #fff;
+  background: transparent;
+  -webkit-transition: 0.2s ease-in;
+  transition: 0.2s ease-in;
+}
+.gallery-popup-modal .gallery-popup-container #close-gallery:hover::after,
+.gallery-popup-modal .gallery-popup-container #close-gallery:hover::before {
+  background: red;
+}
+.gallery-popup-modal .gallery-popup-container #prev-img:hover::after,
+.gallery-popup-modal .gallery-popup-container #prev-img:hover::before,
+.gallery-popup-modal .gallery-popup-container #next-img:hover::after,
+.gallery-popup-modal .gallery-popup-container #next-img:hover::before {
+  background: #fff;
+}
+.gallery-popup-modal .nav-controls {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  z-index: 100;
+  width: 100%;
+  position: fixed;
+  bottom: 10%;
+  max-width: 90%;
+  left: 0;
+  -webkit-box-pack: justify;
+  -webkit-justify-content: space-between;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+  margin-left: 5%;
+}
+@media (min-width: 768px) {
+  .gallery-popup-modal .nav-controls {
+    position: absolute;
+    -webkit-box-pack: justify;
+    -webkit-justify-content: space-between;
+    -ms-flex-pack: justify;
+    justify-content: space-between;
+    top: 50%;
+    bottom: initial;
+    margin-left: 0;
+    max-width: 100%;
+    -webkit-transform: translateY(-50%);
+    transform: translateY(-50%);
+  }
+}
+.gallery-popup-modal .image-modal img {
+  outline: none;
+  height: auto;
+  width: 874px;
+  max-width: 100%;
+}
+.gallery-popup-modal .image-modal__item {
+  display: inline-block;
+  outline: none;
+}
+.gallery-popup-modal .image-modal__item.slick-slide img {
+  display: block;
+  margin: 0 auto;
+}
+
+/*------------------------END: Gallery popup------------------------*/
+/*------------------------Gallery------------------------*/
+.team-gallery-section {
+  background: #2196f3;
+}
+.team-gallery-section .img-block-container {
+  height: 100%;
+  position: relative;
+  overflow: hidden;
+}
+
+.gallery-block {
+  width: 100%;
+}
+.photos-div img:hover {
+  cursor: pointer;
+}
+/*------------------------END: Gallery ------------------------*/

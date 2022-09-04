@@ -1,464 +1,632 @@
 <!DOCTYPE html>
 <html>
-	<head>
-		<meta charset="utf-8">
-		<meta name="viewport" content="width=device-width, initial-scale=1">
-		<title>Test</title>
-		<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
-		<link rel="stylesheet" type="text/css" href="css/style.css">
-		<link rel="stylesheet" type="text/css" href="css/search_style.css">
-		<link rel="preconnect" href="https://fonts.googleapis.com">
-		<link rel="preconnect" href="https://fonts.googleapis.com">
-		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-		<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300&display=swap" rel="stylesheet">
-		<link rel="stylesheet" type="text/css" href="css/owl.carousel.min.css">
-		<link rel="stylesheet" type="text/css" href="css/font-awesome.min.css">
-		<link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css"/>
-		<script src="https://kit.fontawesome.com/c8e4d183c2.js" crossorigin="anonymous"></script>
-	</head>
-	<body>
-		<section class="hero-section nav-section">
-			<nav class="navbar navbar-expand-lg">
-				<a class="navbar-brand" href="#">
-					<img src="img/navlogo.svg">
-				</a>
-				<button class="navbar-toggler custom-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-				<span class="navbar-toggler-icon"></span>
-				</button>
-				<div class="collapse navbar-collapse" id="navbarSupportedContent">
-					<ul class="navbar-nav mr-auto">
-						<li class="nav-item">
-							<a class="nav-link disabled" href="#"></a>
-						</li>
-						<li class="nav-item">
-							<a class="nav-link disabled" href="#"></a>
-						</li>
-					</ul>
-					<form class="search form-inline my-2 my-lg-0" action="#">
-						<input type="search" name="q" placeholder="Search..." autocomplete="off">
-						<ul class="search-ac">
-							<li><a href="index.html">Search Result #1<br><span>Description...</span></a></li>
-							<li><a href="index.html">Search Result #2<br><span>Description...</span></a></li>
-						</ul>
-					</form>
-					<form class=" form-inline my-2 my-lg-0">
-						<button class="btn btn-sm nav-bar-buttons my-2 my-sm-0" type="">
-						<img class="nav-btn-icons" src="img/add_icon.png">
-						Add</button>
-						<button class="btn btn-sm nav-bar-buttons my-2 my-sm-0" type="">
-						<img class="nav-btn-icons" src="img/small_user_icon.png">Login</button>
-					</form>
-				</div>
-			</nav>
-			<div class="container-fluid hero-banner-section">
-				<div class="row align-items-center hero-banner-row">
-					<div class="col-lg-6 col-md-6 col-12 hero-banner-card">
-						<div class="card hero-card">
-							<div class="card-body">
-								<h6 class="hero-t1">This week  topic</h6>
-								<h5 class="card-title hero-title">Ellysa Harry</h5>
-								<h6 class="hero-t2">Actress</h6>
-								<p class="hero-card-text card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-								<div class="hero-more-link">
-									<a href="#" class="hero-link">More Info <img src="img/right-arrow.png"></a>
-								</div>
-								
-							</div>
-						</div>
-						<div class="input-group mb-3 hero-input-group">
-							<input type="text" class="form-control hero-input" placeholder="Email" aria-label="email" aria-describedby="basic-addon2">
-							<div class="input-group-append">
-								<button class="btn hero-input-btn" type="button">Subscribe</button>
-							</div>
-						</div>
-					</div>
-					<div id="scroller" class="mouse_scroll text-center" >
-						<div class="mouse">
-							<div class="wheel"></div>
-						</div>
-						<div>
-							<span class="m_scroll_arrows unu"></span>
-							<span class="m_scroll_arrows doi"></span>
-							<span class="m_scroll_arrows trei"></span>
-						</div>
-					</div>
-					<div class="col-lg-6 col-md-6 col-12">
-						<img class="hero-banner img-fluid" src="img/hero-img.png">
-					</div>
-				</div>
-			</div>
-		</section>
-		<section id="middle" class="explo-section">
-			<div class="container-fluid explo-card-container">
-				<div class="row">
-					<div class="col-lg-3 col-md-3 col-6" onclick="location.href='#';">
-						<div class="card text-center explo-card">
-							<img class="card-img-top explo-img mx-auto" src="img/actor.gif" alt="Card image cap">
-							<div class="">
-								<h5 class="card-title explo-card-title">Actor</h5>
-							</div>
-						</div>
-					</div>
-					<div class="col-lg-3 col-md-3 col-6" onclick="location.href='#';">
-						<div class="card text-center explo-card">
-							<img class="card-img-top explo-img mx-auto" src="img/actress.gif" alt="Card image cap">
-							<div class="">
-								<h5 class="card-title explo-card-title">Actress</h5>
-							</div>
-						</div>
-					</div>
-					<div class="col-lg-3 col-md-3 col-6" onclick="location.href='#';">
-						<div class="card text-center explo-card">
-							<img class="card-img-top explo-img mx-auto" src="img/watching-tv.gif" alt="Card image cap">
-							<div class="">
-								<h5 class="card-title explo-card-title">TV Shows</h5>
-							</div>
-						</div>
-					</div>
-					<div class="col-lg-3 col-md-3 col-6" onclick="location.href='#';">
-						<div class="card text-center explo-card">
-							<img class="card-img-top explo-img mx-auto" src="img/film-reel.gif" alt="Card image cap">
-							<div class="">
-								<h5 class="card-title explo-card-title">Films</h5>
-							</div>
-						</div>
-					</div>
-				</div>
-			</div>
-		</section>
-		<section class="actor-actress-section">
-			<div class="container-fluid actor-container">
-				<div class="col-lg-12 col-md-12 col-12">
-					<h1 class="actor-title">
-					Top Viewed Actor this week
-					</h1>
-					<p class="actor-sub-title">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Consectetur aenean morbi eget et.
-						<a href="#" class="actor-see-more">See more
-							<img src="img/right-arrow-black.png" alt="">
-						</a>
-					</p>
-					<div class="owl-slider">
-						<div id="carousel" class="owl-carousel">
-							<div class="item" onclick="location.href='#';">
-								<img class="caro-item-img" src="img/actor1.png" alt="">
-								<p class="text-center mt-1">Actor Name</p>
-							</div>
-							<div class="item" onclick="location.href='#';">
-								<img class="caro-item-img" src="img/actor2.png" alt="">
-								<p class="text-center mt-1">Actor Name</p>
-							</div>
-							<div class="item" onclick="location.href='#';">
-								<img class="caro-item-img" src="img/actor3.png" alt="">
-								<p class="text-center mt-1">Actor Name</p>
-							</div>
-							<div class="item" onclick="location.href='#';">
-								<img class="caro-item-img" src="img/actor1.png" alt="">
-								<p class="text-center mt-1">Actor Name</p>
-							</div>
-							<div class="item" onclick="location.href='#';">
-								<img class="caro-item-img" src="img/actor1.png" alt="">
-								<p class="text-center mt-1">Actor Name</p>
-							</div>
-							<div class="item" onclick="location.href='#';">
-								<img class="caro-item-img" src="img/actor2.png" alt="">
-								<p class="text-center mt-1">Actor Name</p>
-							</div>
-							<div class="item" onclick="location.href='#';">
-								<img class="caro-item-img" src="img/actor3.png" alt="">
-								<p class="text-center mt-1">Actor Name</p>
-							</div>
-							<div class="item" onclick="location.href='#';">
-								<img class="caro-item-img" src="img/actor1.png" alt="">
-								<p class="text-center mt-1">Actor Name</p>
-							</div>
-						</div>
-					</div>
-				</div>
-			</div>
-		</section>
-		<section class="actor-actress-section">
-			<div class="container-fluid actor-container">
-				<div class="col-lg-12 col-md-12 col-12">
-					<h1 class="actor-title">
-					Top Viewed Actress this week
-					</h1>
-					<p class="actor-sub-title">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Consectetur aenean morbi eget et.
-						<a href="#" class="actor-see-more">See more
-							<img src="img/right-arrow-black.png" alt="">
-						</a>
-					</p>
-					<div class="owl-slider">
-						<div id="carousel2" class="owl-carousel">
-							<div class="item" onclick="location.href='#';">
-								<img class="caro-item-img-actress" src="img/actress1.png" alt="">
-								<p class="text-center mt-1">Actor Name</p>
-							</div>
-							<div class="item" onclick="location.href='#';">
-								<img class="caro-item-img-actress" src="img/actress2.png" alt="">
-								<p class="text-center mt-1">Actor Name</p>
-							</div>
-							<div class="item" onclick="location.href='#';">
-								<img class="caro-item-img-actress" src="img/actress3.png" alt="">
-								<p class="text-center mt-1">Actor Name</p>
-							</div>
-							<div class="item" onclick="location.href='#';">
-								<img class="caro-item-img-actress" src="img/actress1.png" alt="">
-								<p class="text-center mt-1">Actor Name</p>
-							</div>
-							<div class="item" onclick="location.href='#';">
-								<img class="caro-item-img-actress" src="img/actress2.png" alt="">
-								<p class="text-center mt-1">Actor Name</p>
-							</div>
-							<div class="item" onclick="location.href='#';">
-								<img class="caro-item-img-actress" src="img/actress3.png" alt="">
-								<p class="text-center mt-1">Actor Name</p>
-							</div>
-						</div>
-					</div>
-				</div>
-			</div>
-		</section>
-		<section class="tv-show-section">
-			<div class="container-fluid">
-				<div class="row">
-					<div class="col-lg-12 col-md-12 col-12">
-						<h1 class="actor-title">
-						Top Viewed TV Show this week
-						</h1>
-						<p class="actor-sub-title">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Consectetur aenean morbi eget et.
-							<a href="#" class="actor-see-more">See more
-								<img src="img/right-arrow-black.png" alt="">
-							</a>
-						</p>
-					</div>
-				</div>
-			</div>
-		</section>
-		<section id="slider-container">
-			<div class="swiper mySwiper ">
-				<div class="swiper-wrapper">
-					<div class="swiper-slide">
-						<div class="slider-box d-flex align-items-center">
-							<div class="slider-img">
-								<img src="img/1.jpg" alt="poster">
-							</div>
-							<div class="slider-details">
-								<strong>Title</strong>
-								<p>Lorem, ipsum dolor sit, amet consectetur adipisicing elit. Ut vitae blanditiis ducimus rerum error illo nisi rem, asperiores laboriosam, exercitationem natus ipsa dicta, atque? Porro adipisci suscipit veniam beatae amet.</p>
-								<div class="card-btns">
-									<a href="#" class="play-btn"><i class="fas fa-play"></i>Play Now</a>
-								</div>
-							</div>
-						</div>
-					</div>
-					<div class="swiper-slide">
-						<div class="slider-box d-flex align-items-center">
-							<div class="slider-img">
-								<img src="img/2.jpg" alt="poster">
-							</div>
-							<div class="slider-details">
-								<strong>Title</strong>
-								<p>Lorem, ipsum dolor sit, amet consectetur adipisicing elit. Ut vitae blanditiis ducimus rerum error illo nisi rem, asperiores laboriosam, exercitationem natus ipsa dicta, atque? Porro adipisci suscipit veniam beatae amet.</p>
-								<div class="card-btns">
-									<a href="#" class="play-btn"><i class="fas fa-play"></i>Play Now</a>
-								</div>
-							</div>
-						</div>
-					</div>
-					<div class="swiper-slide">
-						<div class="slider-box d-flex align-items-center">
-							<div class="slider-img">
-								<img src="img/3.jpg" alt="poster">
-							</div>
-							<div class="slider-details">
-								<strong>Title</strong>
-								<p>Lorem, ipsum dolor sit, amet consectetur adipisicing elit. Ut vitae blanditiis ducimus rerum error illo nisi rem, asperiores laboriosam, exercitationem natus ipsa dicta, atque? Porro adipisci suscipit veniam beatae amet.</p>
-								<div class="card-btns">
-									<a href="#" class="play-btn"><i class="fas fa-play"></i>Play Now</a>
-								</div>
-							</div>
-						</div>
-					</div>
-					<div class="swiper-slide">
-						<div class="slider-box d-flex align-items-center">
-							<div class="slider-img">
-								<img src="img/4.jpg" alt="poster">
-							</div>
-							<div class="slider-details">
-								<strong>Title</strong>
-								<p>Lorem, ipsum dolor sit, amet consectetur adipisicing elit. Ut vitae blanditiis ducimus rerum error illo nisi rem, asperiores laboriosam, exercitationem natus ipsa dicta, atque? Porro adipisci suscipit veniam beatae amet.</p>
-								<div class="card-btns">
-									<a href="#" class="play-btn"><i class="fas fa-play"></i>Play Now</a>
-								</div>
-							</div>
-						</div>
-					</div>
-				</div>
-				<div class="swiper-pagination"></div>
-			</div>
-		</section>
-		<section class="tv-show-section">
-			<div class="container-fluid">
-				<div class="row">
-					<div class="col-lg-12 col-md-12 col-12">
-						<h1 class="actor-title">
-						Top Viewed Film this week
-						</h1>
-						<p class="actor-sub-title">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Consectetur aenean morbi eget et.
-							<a href="#" class="actor-see-more">See more
-								<img src="img/right-arrow-black.png" alt="">
-							</a>
-						</p>
-					</div>
-				</div>
-			</div>
-		</section>
-		<section id="slider-container2">
-			<div class="swiper mySwiper2">
-				<div class="swiper-wrapper">
-					<div class="swiper-slide">
-						<div class="slider-box d-flex align-items-center">
-							<div class="slider-img">
-								<img src="img/1.jpg" alt="poster">
-							</div>
-							<div class="slider-details">
-								<strong>Title</strong>
-								<p>Lorem, ipsum dolor sit, amet consectetur adipisicing elit. Ut vitae blanditiis ducimus rerum error illo nisi rem, asperiores laboriosam, exercitationem natus ipsa dicta, atque? Porro adipisci suscipit veniam beatae amet.</p>
-								<div class="card-btns">
-									<a href="#" class="play-btn"><i class="fas fa-play"></i>Play Now</a>
-								</div>
-							</div>
-						</div>
-					</div>
-					<div class="swiper-slide">
-						<div class="slider-box d-flex align-items-center">
-							<div class="slider-img">
-								<img src="img/2.jpg" alt="poster">
-							</div>
-							<div class="slider-details">
-								<strong>Title</strong>
-								<p>Lorem, ipsum dolor sit, amet consectetur adipisicing elit. Ut vitae blanditiis ducimus rerum error illo nisi rem, asperiores laboriosam, exercitationem natus ipsa dicta, atque? Porro adipisci suscipit veniam beatae amet.</p>
-								<div class="card-btns">
-									<a href="#" class="play-btn"><i class="fas fa-play"></i>Play Now</a>
-								</div>
-							</div>
-						</div>
-					</div>
-					<div class="swiper-slide">
-						<div class="slider-box d-flex align-items-center">
-							<div class="slider-img">
-								<img src="img/3.jpg" alt="poster">
-							</div>
-							<div class="slider-details">
-								<strong>Title</strong>
-								<p>Lorem, ipsum dolor sit, amet consectetur adipisicing elit. Ut vitae blanditiis ducimus rerum error illo nisi rem, asperiores laboriosam, exercitationem natus ipsa dicta, atque? Porro adipisci suscipit veniam beatae amet.</p>
-								<div class="card-btns">
-									<a href="#" class="play-btn"><i class="fas fa-play"></i>Play Now</a>
-								</div>
-							</div>
-						</div>
-					</div>
-					<div class="swiper-slide">
-						<div class="slider-box d-flex align-items-center">
-							<div class="slider-img">
-								<img src="img/4.jpg" alt="poster">
-							</div>
-							<div class="slider-details">
-								<strong>Title</strong>
-								<p>Lorem, ipsum dolor sit, amet consectetur adipisicing elit. Ut vitae blanditiis ducimus rerum error illo nisi rem, asperiores laboriosam, exercitationem natus ipsa dicta, atque? Porro adipisci suscipit veniam beatae amet.</p>
-								<div class="card-btns">
-									<a href="#" class="play-btn"><i class="fas fa-play"></i>Play Now</a>
-								</div>
-							</div>
-						</div>
-					</div>
-				</div>
-				<div class="swiper-pagination"></div>
-			</div>
-		</section>
-		<section class="footer-section">
-			<div class="container-fluid footer-container">
-				<div class="row ">
-					<div class="col-lg-3 col-md-2 col-12">
-						<img class="img-fluid" src="img/navlogo.svg" alt="">
-					</div>
-					<div class="col-lg-9 col-md-10 col-12 footer-nav">
-						<ul class="footer-links">
-							<li><a href="#">Contact Us</a></li>
-							<li><a href="#">Advertise with us</a></li>
-							<li><a href="#">Terms and Conditions</a></li>
-							<li><a href="#">Report</a></li>
-						</ul>
-					</div>
-					<div class="col-md-12 col-lg-12 col-12">
-						<hr class="footer-hr">
-					</div>
-				</div>
-				<div class="row">
-					<div class="col-md-6 col-lg-6 col-12">
-						<p class="footer-text"> <img src="img/copy-icon.png" alt=""> Copyright 2022 All Rights Reserved</p>
-						<p class="footer-text">This website uses cookies. We use cookies to personalize content and ads and to analyze our traffic. You consent to our cookies if you continue to use this website.</p>
-					</div>
-					<div class="col-md-6 col-lg-6 col-12 text-right social-icons">
-						<a href="#"><img src="img/fb-icon.png" alt=""></a>
-						<a href="#"><img src="img/insta-icon.png" alt=""></a>
-						<a href="#"><img src="img/yt-icon.png" alt=""></a>
-					</div>
-				</div>
-			</section>
-			<!-- <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script> -->
-			<script src="js/jquery-2.1.3.min.js"></script>
-			<script src="https://cdn.jsdelivr.net/npm/popper.js@1.12.9/dist/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
-			<script src="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
-			<script src="js/owl.carousel.min.js"></script>
-			<script src="js/script.js"></script>
-			<script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
-			<script>
-			var swiper = new Swiper(".mySwiper", {
-			effect: "coverflow",
-			grabCursor: true,
-			autoplay:true,
-			loop:true,
-			centeredSlides: true,
-			slidesPerView: "auto",
-			coverflowEffect: {
-			rotate: 50,
-			stretch: 0,
-			depth: 100,
-			modifier: 1,
-			slideShadows: true,
-			},
-			pagination: {
-			el: ".swiper-pagination",
-			},
-			});
-			</script>
-			<script>
-			var swiper = new Swiper(".mySwiper2", {
-			effect: "coverflow",
-			grabCursor: true,
-			autoplay:true,
-			loop:true,
-			centeredSlides: true,
-			slidesPerView: "auto",
-			coverflowEffect: {
-			rotate: 50,
-			stretch: 0,
-			depth: 100,
-			modifier: 1,
-			slideShadows: true,
-			},
-			pagination: {
-			el: ".swiper-pagination",
-			},
-			});
-			</script>
-			<script>
-				$("#scroller").click(function() {
-					$('html,body').animate({
-					scrollTop: $("#middle").offset().top},
-					'slow');
-				});
-			</script>
-		</body>
-	</html>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Test</title>
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css"
+      integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" type="text/css" href="css/style.css" />
+    <link rel="stylesheet" type="text/css" href="css/search_style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@300&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" type="text/css" href="css/owl.carousel.min.css" />
+    <link rel="stylesheet" type="text/css" href="css/font-awesome.min.css" />
+    <link
+      rel="stylesheet"
+      href="https://unpkg.com/swiper/swiper-bundle.min.css"
+    />
+    <script
+      src="https://kit.fontawesome.com/c8e4d183c2.js"
+      crossorigin="anonymous"
+    ></script>
+  </head>
+  <body>
+    <section class="hero-section nav-section">
+      <nav class="navbar navbar-expand-lg">
+        <a class="navbar-brand" href="#">
+          <img src="img/navlogo.svg" />
+        </a>
+        <button
+          class="navbar-toggler custom-toggler"
+          type="button"
+          data-toggle="collapse"
+          data-target="#navbarSupportedContent"
+          aria-controls="navbarSupportedContent"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav mr-auto">
+            <li class="nav-item">
+              <a class="nav-link disabled" href="#"></a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link disabled" href="#"></a>
+            </li>
+          </ul>
+          <form class="search form-inline my-2 my-lg-0" action="#">
+            <input
+              type="search"
+              name="q"
+              placeholder="Search..."
+              autocomplete="off"
+            />
+            <ul class="search-ac">
+              <li>
+                <a href="index.html"
+                  >Search Result #1<br /><span>Description...</span></a
+                >
+              </li>
+              <li>
+                <a href="index.html"
+                  >Search Result #2<br /><span>Description...</span></a
+                >
+              </li>
+            </ul>
+          </form>
+          <form class="form-inline my-2 my-lg-0">
+            <button class="btn btn-sm nav-bar-buttons my-2 my-sm-0" type="">
+              <img class="nav-btn-icons" src="img/add_icon.png" />
+              Add
+            </button>
+            <button class="btn btn-sm nav-bar-buttons my-2 my-sm-0" type="">
+              <img class="nav-btn-icons" src="img/small_user_icon.png" />Login
+            </button>
+          </form>
+        </div>
+      </nav>
+      <div class="container-fluid hero-banner-section">
+        <div class="row align-items-center hero-banner-row">
+          <div class="col-lg-6 col-md-6 col-12 hero-banner-card">
+            <div class="card hero-card">
+              <div class="card-body">
+                <h6 class="hero-t1">This week topic</h6>
+                <h5 class="card-title hero-title">Ellysa Harry</h5>
+                <h6 class="hero-t2">Actress</h6>
+                <p class="hero-card-text card-text">
+                  Some quick example text to build on the card title and make up
+                  the bulk of the card's content.
+                </p>
+                <div class="hero-more-link">
+                  <a href="#" class="hero-link"
+                    >More Info <img src="img/right-arrow.png"
+                  /></a>
+                </div>
+              </div>
+            </div>
+            <div class="input-group mb-3 hero-input-group">
+              <input
+                type="text"
+                class="form-control hero-input"
+                placeholder="Email"
+                aria-label="email"
+                aria-describedby="basic-addon2"
+              />
+              <div class="input-group-append">
+                <button class="btn hero-input-btn" type="button">
+                  Subscribe
+                </button>
+              </div>
+            </div>
+          </div>
+          <div id="scroller" class="mouse_scroll text-center">
+            <div class="mouse">
+              <div class="wheel"></div>
+            </div>
+            <div>
+              <span class="m_scroll_arrows unu"></span>
+              <span class="m_scroll_arrows doi"></span>
+              <span class="m_scroll_arrows trei"></span>
+            </div>
+          </div>
+          <div class="col-lg-6 col-md-6 col-12">
+            <img class="hero-banner img-fluid" src="img/hero-img.png" />
+          </div>
+        </div>
+      </div>
+    </section>
+    <section id="middle" class="explo-section">
+      <div class="container-fluid explo-card-container">
+        <div class="row">
+          <div class="col-lg-3 col-md-3 col-6" onclick="location.href='#';">
+            <div class="card text-center explo-card">
+              <img
+                class="card-img-top explo-img mx-auto"
+                src="img/actor.gif"
+                alt="Card image cap"
+              />
+              <div class="">
+                <h5 class="card-title explo-card-title">Actor</h5>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-3 col-md-3 col-6" onclick="location.href='#';">
+            <div class="card text-center explo-card">
+              <img
+                class="card-img-top explo-img mx-auto"
+                src="img/actress.gif"
+                alt="Card image cap"
+              />
+              <div class="">
+                <h5 class="card-title explo-card-title">Actress</h5>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-3 col-md-3 col-6" onclick="location.href='#';">
+            <div class="card text-center explo-card">
+              <img
+                class="card-img-top explo-img mx-auto"
+                src="img/watching-tv.gif"
+                alt="Card image cap"
+              />
+              <div class="">
+                <h5 class="card-title explo-card-title">TV Shows</h5>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-3 col-md-3 col-6" onclick="location.href='#';">
+            <div class="card text-center explo-card">
+              <img
+                class="card-img-top explo-img mx-auto"
+                src="img/film-reel.gif"
+                alt="Card image cap"
+              />
+              <div class="">
+                <h5 class="card-title explo-card-title">Films</h5>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="actor-actress-section">
+      <div class="container-fluid actor-container">
+        <div class="col-lg-12 col-md-12 col-12">
+          <h1 class="actor-title">Top Viewed Actor this week</h1>
+          <p class="actor-sub-title">
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Consectetur
+            aenean morbi eget et.
+            <a href="#" class="actor-see-more"
+              >See more
+              <img src="img/right-arrow-black.png" alt="" />
+            </a>
+          </p>
+          <div class="owl-slider">
+            <div id="carousel" class="owl-carousel">
+              <div class="item" onclick="location.href='#';">
+                <img class="caro-item-img" src="img/actor1.png" alt="" />
+                <p class="text-center mt-1">Actor Name</p>
+              </div>
+              <div class="item" onclick="location.href='#';">
+                <img class="caro-item-img" src="img/actor2.png" alt="" />
+                <p class="text-center mt-1">Actor Name</p>
+              </div>
+              <div class="item" onclick="location.href='#';">
+                <img class="caro-item-img" src="img/actor3.png" alt="" />
+                <p class="text-center mt-1">Actor Name</p>
+              </div>
+              <div class="item" onclick="location.href='#';">
+                <img class="caro-item-img" src="img/actor1.png" alt="" />
+                <p class="text-center mt-1">Actor Name</p>
+              </div>
+              <div class="item" onclick="location.href='#';">
+                <img class="caro-item-img" src="img/actor1.png" alt="" />
+                <p class="text-center mt-1">Actor Name</p>
+              </div>
+              <div class="item" onclick="location.href='#';">
+                <img class="caro-item-img" src="img/actor2.png" alt="" />
+                <p class="text-center mt-1">Actor Name</p>
+              </div>
+              <div class="item" onclick="location.href='#';">
+                <img class="caro-item-img" src="img/actor3.png" alt="" />
+                <p class="text-center mt-1">Actor Name</p>
+              </div>
+              <div class="item" onclick="location.href='#';">
+                <img class="caro-item-img" src="img/actor1.png" alt="" />
+                <p class="text-center mt-1">Actor Name</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="actor-actress-section">
+      <div class="container-fluid actor-container">
+        <div class="col-lg-12 col-md-12 col-12">
+          <h1 class="actor-title">Top Viewed Actress this week</h1>
+          <p class="actor-sub-title">
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Consectetur
+            aenean morbi eget et.
+            <a href="#" class="actor-see-more"
+              >See more
+              <img src="img/right-arrow-black.png" alt="" />
+            </a>
+          </p>
+          <div class="owl-slider">
+            <div id="carousel2" class="owl-carousel">
+              <div class="item" onclick="location.href='#';">
+                <img
+                  class="caro-item-img-actress"
+                  src="img/actress1.png"
+                  alt=""
+                />
+                <p class="text-center mt-1">Actor Name</p>
+              </div>
+              <div class="item" onclick="location.href='#';">
+                <img
+                  class="caro-item-img-actress"
+                  src="img/actress2.png"
+                  alt=""
+                />
+                <p class="text-center mt-1">Actor Name</p>
+              </div>
+              <div class="item" onclick="location.href='#';">
+                <img
+                  class="caro-item-img-actress"
+                  src="img/actress3.png"
+                  alt=""
+                />
+                <p class="text-center mt-1">Actor Name</p>
+              </div>
+              <div class="item" onclick="location.href='#';">
+                <img
+                  class="caro-item-img-actress"
+                  src="img/actress1.png"
+                  alt=""
+                />
+                <p class="text-center mt-1">Actor Name</p>
+              </div>
+              <div class="item" onclick="location.href='#';">
+                <img
+                  class="caro-item-img-actress"
+                  src="img/actress2.png"
+                  alt=""
+                />
+                <p class="text-center mt-1">Actor Name</p>
+              </div>
+              <div class="item" onclick="location.href='#';">
+                <img
+                  class="caro-item-img-actress"
+                  src="img/actress3.png"
+                  alt=""
+                />
+                <p class="text-center mt-1">Actor Name</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="tv-show-section">
+      <div class="container-fluid">
+        <div class="row">
+          <div class="col-lg-12 col-md-12 col-12">
+            <h1 class="actor-title">Top Viewed TV Show this week</h1>
+            <p class="actor-sub-title">
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+              Consectetur aenean morbi eget et.
+              <a href="#" class="actor-see-more"
+                >See more
+                <img src="img/right-arrow-black.png" alt="" />
+              </a>
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section id="slider-container">
+      <div class="swiper mySwiper">
+        <div class="swiper-wrapper">
+          <div class="swiper-slide">
+            <div class="slider-box d-flex align-items-center">
+              <div class="slider-img">
+                <img src="img/1.jpg" alt="poster" />
+              </div>
+              <div class="slider-details">
+                <strong>Title</strong>
+                <p>
+                  Lorem, ipsum dolor sit, amet consectetur adipisicing elit. Ut
+                  vitae blanditiis ducimus rerum error illo nisi rem, asperiores
+                  laboriosam, exercitationem natus ipsa dicta, atque? Porro
+                  adipisci suscipit veniam beatae amet.
+                </p>
+                <div class="card-btns">
+                  <a href="#" class="play-btn"
+                    ><i class="fas fa-play"></i>Play Now</a
+                  >
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="swiper-slide">
+            <div class="slider-box d-flex align-items-center">
+              <div class="slider-img">
+                <img src="img/2.jpg" alt="poster" />
+              </div>
+              <div class="slider-details">
+                <strong>Title</strong>
+                <p>
+                  Lorem, ipsum dolor sit, amet consectetur adipisicing elit. Ut
+                  vitae blanditiis ducimus rerum error illo nisi rem, asperiores
+                  laboriosam, exercitationem natus ipsa dicta, atque? Porro
+                  adipisci suscipit veniam beatae amet.
+                </p>
+                <div class="card-btns">
+                  <a href="#" class="play-btn"
+                    ><i class="fas fa-play"></i>Play Now</a
+                  >
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="swiper-slide">
+            <div class="slider-box d-flex align-items-center">
+              <div class="slider-img">
+                <img src="img/3.jpg" alt="poster" />
+              </div>
+              <div class="slider-details">
+                <strong>Title</strong>
+                <p>
+                  Lorem, ipsum dolor sit, amet consectetur adipisicing elit. Ut
+                  vitae blanditiis ducimus rerum error illo nisi rem, asperiores
+                  laboriosam, exercitationem natus ipsa dicta, atque? Porro
+                  adipisci suscipit veniam beatae amet.
+                </p>
+                <div class="card-btns">
+                  <a href="#" class="play-btn"
+                    ><i class="fas fa-play"></i>Play Now</a
+                  >
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="swiper-slide">
+            <div class="slider-box d-flex align-items-center">
+              <div class="slider-img">
+                <img src="img/4.jpg" alt="poster" />
+              </div>
+              <div class="slider-details">
+                <strong>Title</strong>
+                <p>
+                  Lorem, ipsum dolor sit, amet consectetur adipisicing elit. Ut
+                  vitae blanditiis ducimus rerum error illo nisi rem, asperiores
+                  laboriosam, exercitationem natus ipsa dicta, atque? Porro
+                  adipisci suscipit veniam beatae amet.
+                </p>
+                <div class="card-btns">
+                  <a href="#" class="play-btn"
+                    ><i class="fas fa-play"></i>Play Now</a
+                  >
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="swiper-pagination"></div>
+      </div>
+    </section>
+    <section class="tv-show-section">
+      <div class="container-fluid">
+        <div class="row">
+          <div class="col-lg-12 col-md-12 col-12">
+            <h1 class="actor-title">Top Viewed Film this week</h1>
+            <p class="actor-sub-title">
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+              Consectetur aenean morbi eget et.
+              <a href="#" class="actor-see-more"
+                >See more
+                <img src="img/right-arrow-black.png" alt="" />
+              </a>
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section id="slider-container2">
+      <div class="swiper mySwiper2">
+        <div class="swiper-wrapper">
+          <div class="swiper-slide">
+            <div class="slider-box d-flex align-items-center">
+              <div class="slider-img">
+                <img src="img/1.jpg" alt="poster" />
+              </div>
+              <div class="slider-details">
+                <strong>Title</strong>
+                <p>
+                  Lorem, ipsum dolor sit, amet consectetur adipisicing elit. Ut
+                  vitae blanditiis ducimus rerum error illo nisi rem, asperiores
+                  laboriosam, exercitationem natus ipsa dicta, atque? Porro
+                  adipisci suscipit veniam beatae amet.
+                </p>
+                <div class="card-btns">
+                  <a href="#" class="play-btn"
+                    ><i class="fas fa-play"></i>Play Now</a
+                  >
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="swiper-slide">
+            <div class="slider-box d-flex align-items-center">
+              <div class="slider-img">
+                <img src="img/2.jpg" alt="poster" />
+              </div>
+              <div class="slider-details">
+                <strong>Title</strong>
+                <p>
+                  Lorem, ipsum dolor sit, amet consectetur adipisicing elit. Ut
+                  vitae blanditiis ducimus rerum error illo nisi rem, asperiores
+                  laboriosam, exercitationem natus ipsa dicta, atque? Porro
+                  adipisci suscipit veniam beatae amet.
+                </p>
+                <div class="card-btns">
+                  <a href="#" class="play-btn"
+                    ><i class="fas fa-play"></i>Play Now</a
+                  >
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="swiper-slide">
+            <div class="slider-box d-flex align-items-center">
+              <div class="slider-img">
+                <img src="img/3.jpg" alt="poster" />
+              </div>
+              <div class="slider-details">
+                <strong>Title</strong>
+                <p>
+                  Lorem, ipsum dolor sit, amet consectetur adipisicing elit. Ut
+                  vitae blanditiis ducimus rerum error illo nisi rem, asperiores
+                  laboriosam, exercitationem natus ipsa dicta, atque? Porro
+                  adipisci suscipit veniam beatae amet.
+                </p>
+                <div class="card-btns">
+                  <a href="#" class="play-btn"
+                    ><i class="fas fa-play"></i>Play Now</a
+                  >
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="swiper-slide">
+            <div class="slider-box d-flex align-items-center">
+              <div class="slider-img">
+                <img src="img/4.jpg" alt="poster" />
+              </div>
+              <div class="slider-details">
+                <strong>Title</strong>
+                <p>
+                  Lorem, ipsum dolor sit, amet consectetur adipisicing elit. Ut
+                  vitae blanditiis ducimus rerum error illo nisi rem, asperiores
+                  laboriosam, exercitationem natus ipsa dicta, atque? Porro
+                  adipisci suscipit veniam beatae amet.
+                </p>
+                <div class="card-btns">
+                  <a href="#" class="play-btn"
+                    ><i class="fas fa-play"></i>Play Now</a
+                  >
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="swiper-pagination"></div>
+      </div>
+    </section>
+    <section class="footer-section">
+      <div class="container-fluid footer-container">
+        <div class="row">
+          <div class="col-lg-3 col-md-2 col-12">
+            <img class="img-fluid footer-logo" src="img/navlogo.svg" alt="" />
+          </div>
+          <div class="col-lg-9 col-md-10 col-12 footer-nav">
+            <ul class="footer-links">
+              <li><a href="#">Contact Us</a></li>
+              <li><a href="#">Advertise with us</a></li>
+              <li><a href="#">Terms and Conditions</a></li>
+              <li><a href="#">Report</a></li>
+            </ul>
+          </div>
+          <div class="col-md-12 col-lg-12 col-12">
+            <hr class="footer-hr" />
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-md-6 col-lg-6 col-12">
+            <p class="footer-text">
+              <img src="img/copy-icon.png" alt="" /> Copyright 2022 All Rights
+              Reserved
+            </p>
+            <p class="footer-text">
+              This website uses cookies. We use cookies to personalize content
+              and ads and to analyze our traffic. You consent to our cookies if
+              you continue to use this website.
+            </p>
+          </div>
+          <div class="col-md-6 col-lg-6 col-12 text-right social-icons">
+            <a href="#"><img src="img/fb-icon.png" alt="" /></a>
+            <a href="#"><img src="img/insta-icon.png" alt="" /></a>
+            <a href="#"><img src="img/yt-icon.png" alt="" /></a>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script> -->
+    <script src="js/jquery-2.1.3.min.js"></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/popper.js@1.12.9/dist/umd/popper.min.js"
+      integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/js/bootstrap.min.js"
+      integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
+      crossorigin="anonymous"
+    ></script>
+    <script src="js/owl.carousel.min.js"></script>
+    <script src="js/script.js"></script>
+    <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+    <script>
+      var swiper = new Swiper(".mySwiper", {
+        effect: "coverflow",
+        grabCursor: true,
+        autoplay: true,
+        loop: true,
+        centeredSlides: true,
+        slidesPerView: "auto",
+        coverflowEffect: {
+          rotate: 50,
+          stretch: 0,
+          depth: 100,
+          modifier: 1,
+          slideShadows: true,
+        },
+        pagination: {
+          el: ".swiper-pagination",
+        },
+      });
+    </script>
+    <script>
+      var swiper = new Swiper(".mySwiper2", {
+        effect: "coverflow",
+        grabCursor: true,
+        autoplay: true,
+        loop: true,
+        centeredSlides: true,
+        slidesPerView: "auto",
+        coverflowEffect: {
+          rotate: 50,
+          stretch: 0,
+          depth: 100,
+          modifier: 1,
+          slideShadows: true,
+        },
+        pagination: {
+          el: ".swiper-pagination",
+        },
+      });
+    </script>
+    <script>
+      $("#scroller").click(function () {
+        $("html,body").animate(
+          {
+            scrollTop: $("#middle").offset().top,
+          },
+          "slow"
+        );
+      });
+    </script>
+  </body>
+</html>
